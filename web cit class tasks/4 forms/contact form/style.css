@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: #000;
+}
+
+/* header */
+header {
+  position: relative;
+  height: 250px;
+  text-align: center;
+  text-indent: 60px;
+  text-transform: uppercase;
+  }
+
+.background-text {
+  width: 100%;
+  top: 7%;
+  font-size: 100px;
+  color: #404040;
+}
+
+.foreground-text {
+  position: absolute;
+  top: 33%;
+  width: 100%;
+  font-size: 50px;
+  color: #f1c50e;
+}
+
+/* Content */
+.right-content, .left-content {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* Left Content */
+.left-content {
+  float: left;
+  color: #fff;
+  width: 560px;
+  padding-left: 145px;
+  padding-right: 85px;
+  margin-top: 30px;
+}
+.left-content h3 {
+  text-transform: uppercase;
+  font-size: 38px;
+  margin-bottom: 22px;
+}
+.left-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #f0efe9;
+}
+.my-email {
+  margin-top: 40px;
+}
+.my-phone {
+  margin-top: 35px;
+}
+
+/* Right Content */
+.right-content input {
+  width: 700px;
+  margin-top: 20px;
+  border: 2px solid #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #000;
+  color: #636363;
+  padding: 14px 0px 13px 12px;
+}
+.right-content input[name=message] {
+  padding: 14px 0px 90px 12px;
+}
+.right-content input[type=checkbox] {
+  width: auto;
+}
+.right-content p {
+  color: #fff;
+  font-size: 18px;
+}
+.right-content a {
+  color: #bf99d4;
+  text-decoration: none;
+}
+.right-content a:hover {
+  text-decoration: underline;
+}
+.right-content input[type=submit] {
+  text-transform: uppercase;
+  width: 130px;
+  background-color: #f1c50e;
+  padding: 14px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.right-content input[type=submit]:hover {
+  background-color: #f1a90e;
+  cursor:  pointer;
+}
