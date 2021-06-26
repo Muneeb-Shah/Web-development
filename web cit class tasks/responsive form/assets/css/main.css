@@ -173,11 +173,11 @@ body{
     }
     
     #sign-in form{
-        margin: 0;
+        margin: 10px 0;
     }
     
     #sign-up form{
-        margin: 0;
+        margin: 10px 0;
     }   
 }
 
