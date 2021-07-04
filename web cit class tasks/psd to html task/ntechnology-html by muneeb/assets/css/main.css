@@ -736,7 +736,8 @@ body a {
     margin-top: 5%;
     background: url(../../images/video-thumbnail.jpg);
     background-size: cover;
-    background-repeat: round;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #four > .wrapper > .content > .read-more-button {
