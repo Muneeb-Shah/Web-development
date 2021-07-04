@@ -147,7 +147,7 @@ body a {
     display: block;
     float: right;
     width: 78%;
-    font-size: clamp(10px, 0.9vw, 20px);
+    font-size: clamp(10px, 0.88vw, 20px);
     font-weight: 400;
     margin-left: 1%;
     margin-top: 8px;
