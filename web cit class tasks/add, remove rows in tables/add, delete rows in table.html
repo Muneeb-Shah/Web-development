@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="" />
+    <style>
+        #my-table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 50px;
+            background: #333;
+            color: #fff;
+            border: 5px solid #000;
+        }
+
+        #my-table tr {
+            border: 1px solid #fff;
+            height: 30px;
+        }
+
+        #my-table tr td,
+        #my-table tr th {
+            border: 1px solid #fff;
+        }
+
+        #btn {
+            height: 35px;
+            width: 100px;
+            margin-left: calc(50% - 50px);
+            margin-top: 20px;
+            color: #fff;
+            background: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table id="my-table">
+        <tr>
+            <th>SR NO.</th>
+            <th>NAME</th>
+            <th>ADDRESS</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Name 1</td>
+            <td>Address 1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Name 2</td>
+            <td>Address 2</td>
+        </tr>
+    </table>
+
+    <button id="btn" onclick="addRows()">Add Rows</button>
+    <button id="btn" onclick="deleteRows()">Delete Rows</button>
+
+    <script>
+        var myTable = document.getElementById("my-table");
+
+        function addRows() {
+            var rows = prompt("how many rows you want to add: ");
+
+            for (i = 1; i <= rows; i++) {
+                var rowIndex = myTable.getElementsByTagName("tr").length;
+                var row = myTable.insertRow(rowIndex);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                cell1.innerHTML = rowIndex;
+                cell2.innerHTML = "Name " + rowIndex;
+                cell3.innerHTML = "Address " + rowIndex;
+            }
+        }
+
+        function deleteRows() {
+            var deleteRows = prompt("how many rows you want to delete: ");
+
+            for (i = 1; i <= deleteRows; i++) {
+                var rowIndex = (myTable.getElementsByTagName("tr").length) - 1;
+                myTable.deleteRow(rowIndex);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
